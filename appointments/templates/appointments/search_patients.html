@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Patients</title>
+{% endblock %}
+
+{% block menuTitle %}
+    <h1 class="display-2"><b>Appointment System</b></h1>
+{% endblock %}
+
+{% block leftNavbar %}
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url "doctor" %}">Doctor Page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url "news" %}">News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url "contact" %}">Contact</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block container %}
+    <h2 style="height:70px"></h2>
+    <table class="table table-hover">
+        <input class="form-control" id="myInput" type="text" placeholder="Search patient...">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">GSM</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Gender</th>
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        {% for patient in object_list %}
+
+
+            <tr>
+                <td scope="row">{{ patient.name }}</td>
+                <td scope="row">{{ patient.age }}</td>
+                <td scope="row">{{ patient.gsm }}</td>
+                <td scope="row">{{ patient.email }}</td>
+                <td scope="row">{{ patient.address }}</td>
+                <td scope="row">{{ patient.gender }}</td>
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

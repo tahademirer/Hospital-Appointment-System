@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>News</title>
+{% endblock %}
+
+{% block menuTitle %}
+    <h1 class="display-2"><b>News</b></h1>
+    <p>This is a news page.</p>
+{% endblock %}
+
+{% block leftNavbar %}
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url "home" %}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="">News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url "contact" %}">Contact</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block rightNavbar %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Member Transactions
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{% url "login" %}">Login</a>
+            <a class="dropdown-item" href="{% url "signup2" %}">Register</a>
+            <a class="dropdown-item" href="{% url "forgetPassword" %}">Forget Password</a>
+        </div>
+    </li>
+{% endblock %}
+
+{% block container %}
+    <div class="card-columns">
+        <div class="card">
+            <img class="card-img-top"
+                 src="http://i0.wp.com/post.healthline.com/wp-content/uploads/2019/10/Couple_Rooftop_1296x728-header-1296x728.jpg?w=1575%20750w"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Syphilis, Gonorrhea, Chlamydia Cases Reach Record Highs in US</h5>
+                <p class="card-text">The CDC is urging greater focus on the country’s STD epidemic after publishing new
+                    reports that syphilis, gonorrhea, and chlamydia cases have hit an...</p>
+                <a href="#" class="btn btn-primary">READ MORE</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="http://i0.wp.com/post.healthline.com/wp-content/uploads/2019/10/Family_Kitchen_1296x728-header-1-1296x728.jpg?w=1575%20750w"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">New TB Vaccine Could Save Millions of Lives, Study Suggests</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <a href="#" class="btn btn-primary">READ MORE</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="http://i0.wp.com/post.healthline.com/wp-content/uploads/2019/10/Females_Beach_1296x728-header-1296x728.jpg?w=1575%20750w"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">New TB Vaccine Could Save Millions of Lives, Study
+                    <Suggests></Suggests>
+                </h5>
+                <p class="card-text">Antibiotic resistance has emerged as one of the greatest threats to public health
+                    in recent years. A new study found that resistance to commonly used.</p>
+                <a href="#" class="btn btn-primary">READ MORE</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="http://i0.wp.com/post.healthline.com/wp-content/uploads/2019/10/Female_Runner_Sunrise_1296x728-header-1-1296x728.jpg?w=1575%20750w"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Is Meat Good or Bad? How to Avoid Whiplash from Nutritional Studies</h5>
+                <p class="card-text">If news on nutrition leaves you perpetually confused, you’re not alone. A 2018
+                    survey most came across conflicting advice on nutrition, causing half...</p>
+                <a href="#" class="btn btn-primary">READ MORE</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="http://i0.wp.com/post.healthline.com/wp-content/uploads/2019/10/Female_Mirror_Pill_1296x728-header-1-1296x728.jpg?w=1575%20750w"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Here’s How Bad Antibiotic Resistance Has Gotten Over the Past 20 Years</h5>
+                <p class="card-text">Antibiotic resistance has emerged as one of the greatest threats to public health
+                    in recent years. A new study found that resistance to commonly used.</p>
+                <a href="#" class="btn btn-primary">READ MORE</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="http://i0.wp.com/post.healthline.com/wp-content/uploads/2019/10/Female_Headache_1296x728-header-1-1296x728.jpg?w=1575%20750w"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Gene-Therapy Treatment May Help People with Macular Degeneration</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">READ MORE</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+{% endblock %}
