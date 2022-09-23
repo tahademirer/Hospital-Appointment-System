@@ -8,7 +8,7 @@ mysql-connector-python==8.0.18
 mysqlclient==1.4.5
 pip==19.3.1
 pipenv==2018.11.26
-protobuf==3.10.0
+protobuf==3.18.3
 psycopg2==2.8.4
 pytz==2019.3
 requests==2.22.0
